@@ -161,6 +161,7 @@
 @import 'migrate/new-elements/get_started_card.scss';
 @import 'migrate/new-elements/panel.scss';
 @import 'migrate/new-elements/stepGuide.scss';
+@import 'migrate/new-elements/userPack.scss';
 
 @import 'migrate/jibres-store-panel/priceBox.scss';
 @import 'migrate/jibres-store-panel/storePanel.scss';

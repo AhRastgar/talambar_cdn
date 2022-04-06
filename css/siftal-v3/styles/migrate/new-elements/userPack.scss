@@ -1,0 +1,27 @@
+.userPack{
+  font-size: 10px;
+  max-width: 140px;
+  min-width: 120px;
+}
+.userPack img{
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0;
+}
+.userPack .mobile{
+  direction: ltr;
+  text-align: left;
+  line-height: 15px;
+  display: block;
+  min-width: 90px;
+}
+[dir='rtl'] .userPack .mobile{
+  min-width: 70px;
+}
+.userPack .name{
+  text-align: left;
+  line-height: 15px;
+}
+
