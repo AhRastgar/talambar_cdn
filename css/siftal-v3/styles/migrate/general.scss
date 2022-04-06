@@ -68,3 +68,30 @@ img.avatar{
 	margin-left: 3px;
 }
 
+
+samp {
+  white-space: pre; /* CSS2 */
+  white-space: pre-wrap; /* CSS 2.1 */
+  /* white-space: pre-line; */ /* CSS 3 (and 2.1 as well, actually) */
+  word-wrap: break-word; /* IE */
+  display:block;
+  direction: ltr;
+  font-family: monospace, sans-serif;
+  font-size: 1em;
+  overflow: auto;
+  margin: 0;
+  padding: 1em;
+  border: 0;
+  font-weight: normal;
+  vertical-align: baseline;
+  background: transparent;
+  box-sizing: border-box;
+  background-color:#000;
+  color:#1ff042;
+  opacity: 0.8;
+  transition: 0.3s;
+  @apply select-text;
+}
+samp:hover{
+  opacity: 1;
+}
