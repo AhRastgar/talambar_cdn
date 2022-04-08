@@ -1,8 +1,5 @@
 @import "tailwindcss/base";
 
-@import "tailwindcss/components";
-
-@import "tailwindcss/utilities";
 
 
 
@@ -201,3 +198,8 @@
 @import 'special/_ipProtection.scss';
 @import 'special/_recaptcha.scss';
 
+
+
+/* add tailwind custom classes */
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
