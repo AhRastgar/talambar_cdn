@@ -6255,7 +6255,8 @@ body .rtl .items li .go::after{
   .break-inside-avoid{page-break-inside: avoid;}
 
 
-  body[data-m2]{background-color:transparent;}
+  body[data-m2]{background-color:transparent!important;}
+  body[data-m2] #pageCenter{background-color:transparent!important;}
   [data-m2] #main:after{display:none}
   [data-m2] #sidebar{display:none;}
   [data-m2] #pageHeader .desktop{display:none;}
