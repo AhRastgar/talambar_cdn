@@ -116,6 +116,7 @@
 @import 'migrate/share1.scss';
 @import 'migrate/welcome.scss';
 @import 'migrate/general.scss';
+@import 'migrate/statistic.scss';
 
 @import 'migrate/grid/grid.scss';
 @import 'migrate/grid/gridLarge.scss';

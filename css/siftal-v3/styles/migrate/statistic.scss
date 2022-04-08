@@ -1,0 +1,389 @@
+.statistic {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin: 10px auto;
+    max-width:auto;
+}
+
+[dir="ltr"] .statistic+.statistic {
+    margin-left:15px;
+}
+
+[dir="rtl"] .statistic+.statistic {
+    margin-right:15px;
+}
+
+.statistic:first-child {
+    margin-top: 0;
+}
+
+.statistic:last-child {
+    margin-bottom: 0
+}
+
+
+.statistics {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap
+}
+
+.statistics>.statistic {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width:auto;
+}
+
+
+.statistics:after {
+    display: block;
+    content: ' ';
+    height: 0;
+    clear: both;
+    overflow: hidden;
+    visibility: hidden
+}
+
+.statistics:first-child {
+    margin-top: 0
+}
+
+.statistics:last-child {
+    margin-bottom: 0
+}
+
+.statistic>.value,.statistics .statistic>.value {
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 40px;
+    text-transform: uppercase;
+    text-align: center
+}
+
+.statistic>.label,.statistics .statistic>.label {
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center
+}
+
+.statistic>.label~.value,.statistics .statistic>.label~.value {
+    margin-top: 0
+}
+
+.statistic>.value~.label,.statistics .statistic>.value~.label {
+    margin-top: 0
+}
+
+.statistic>.value [class^="sf-"],.statistics .statistic>.value [class^="sf-"] {
+    opacity: 1;
+    width: auto;
+    margin: 0;
+    font-size: 8px;
+    vertical-align: middle;
+}
+.statistic>.value [class^="sf-"]:before {
+    line-height:inherit;
+}
+
+.statistic>.text.value,.statistics .statistic>.text.value {
+    line-height: 20px;
+    min-height: 20px;
+    font-weight: 700;
+    text-align: center;
+    font-size: 20px!important;
+}
+
+.statistic>.text.value+.label,.statistics .statistic>.text.value+.label {
+    text-align: center
+}
+
+.statistic>.value img,.statistics .statistic>.value img {
+    max-height: 30px;
+    vertical-align: baseline
+}
+
+.ten.statistics {
+    margin: 0 0 -20px
+}
+
+.ten.statistics .statistic {
+    min-width: 10%;
+    margin: 0 0 20px
+}
+
+.nine.statistics {
+    margin: 0 0 -20px
+}
+
+.nine.statistics .statistic {
+    min-width: 11.11111111%;
+    margin: 0 0 20px
+}
+
+.eight.statistics {
+    margin: 0 0 -20px
+}
+
+.eight.statistics .statistic {
+    min-width: 12.5%;
+    margin: 0 0 20px
+}
+
+.seven.statistics {
+    margin: 0 0 -20px
+}
+
+.seven.statistics .statistic {
+    min-width: 14.28571429%;
+    margin: 0 0 20px
+}
+
+.six.statistics {
+    margin: 0 0 -20px
+}
+
+.six.statistics .statistic {
+    min-width: 16.66666667%;
+    margin: 0 0 20px
+}
+
+.five.statistics {
+    margin: 0 0 -20px
+}
+
+.five.statistics .statistic {
+    min-width: 20%;
+    margin: 0 0 20px
+}
+
+.four.statistics {
+    margin: 0 0 -20px
+}
+
+.four.statistics .statistic {
+    min-width: 25%;
+    margin: 0 0 20px
+}
+
+.three.statistics {
+    margin: 0 0 -20px
+}
+
+.three.statistics .statistic {
+    min-width: 33.33333333%;
+    margin: 0 0 20px
+}
+
+.two.statistics {
+    margin: 0 0 -20px
+}
+
+.two.statistics .statistic {
+    min-width: 50%;
+    margin: 0 0 20px
+}
+
+.one.statistics {
+    margin: 0 0 -20px
+}
+
+.one.statistics .statistic {
+    min-width: 100%;
+    margin: 0 0 20px
+}
+
+.horizontal.statistic {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.horizontal.statistics {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin: 0;
+    max-width: none
+}
+
+.horizontal.statistics .statistic {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    max-width: none;
+    margin: 10px 0
+}
+
+.horizontal.statistic>.text.value,.horizontal.statistics>.statistic>.text.value {
+    min-height: 0!important
+}
+
+.horizontal.statistic>.value [class^="sf-"],.horizontal.statistics .statistic>.value [class^="sf-"] {
+    width: 12px
+}
+
+.horizontal.statistic>.value,.horizontal.statistics .statistic>.value {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 30px!important
+}
+
+.horizontal.statistic>.label,.horizontal.statistics .statistic>.label {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 0 0 8px;
+}
+[dir="rtl"] .horizontal.statistic>.label,.horizontal.statistics .statistic>.label {
+    margin: 0 8px 0 0;
+}
+
+.red.statistic>.value,.red.statistics .statistic>.value,.statistics .red.statistic>.value {
+    color: #db2828
+}
+
+.orange.statistic>.value,.orange.statistics .statistic>.value,.statistics .orange.statistic>.value {
+    color: #f2711c
+}
+
+.statistics .yellow.statistic>.value,.yellow.statistic>.value,.yellow.statistics .statistic>.value {
+    color: #fbbd08
+}
+
+.olive.statistic>.value,.olive.statistics .statistic>.value,.statistics .olive.statistic>.value {
+    color: #b5cc18
+}
+
+.green.statistic>.value,.green.statistics .statistic>.value,.statistics .green.statistic>.value {
+    color: #21ba45
+}
+
+.statistics .teal.statistic>.value,.teal.statistic>.value,.teal.statistics .statistic>.value {
+    color: #00b5ad
+}
+
+.blue.statistic>.value,.blue.statistics .statistic>.value,.statistics .blue.statistic>.value {
+    color: #2185d0
+}
+
+.statistics .violet.statistic>.value,.violet.statistic>.value,.violet.statistics .statistic>.value {
+    color: #6435c9
+}
+
+.purple.statistic>.value,.purple.statistics .statistic>.value,.statistics .purple.statistic>.value {
+    color: #a333c8
+}
+
+.pink.statistic>.value,.pink.statistics .statistic>.value,.statistics .pink.statistic>.value {
+    color: #e03997
+}
+
+.brown.statistic>.value,.brown.statistics .statistic>.value,.statistics .brown.statistic>.value {
+    color: #a5673f
+}
+
+.grey.statistic>.value,.grey.statistics .statistic>.value,.statistics .grey.statistic>.value {
+    color: #767676
+}
+
+
+.inverted.statistic .value,.inverted.statistics .statistic>.value {
+    color: #fff
+}
+
+.inverted.statistic .label,.inverted.statistics .statistic>.label {
+    color: rgba(255,255,255,.9)
+}
+
+.inverted.red.statistic>.value,.inverted.red.statistics .statistic>.value,.statistics .inverted.red.statistic>.value {
+    color: #ff695e
+}
+
+.inverted.orange.statistic>.value,.inverted.orange.statistics .statistic>.value,.statistics .inverted.orange.statistic>.value {
+    color: #ff851b
+}
+
+.inverted.yellow.statistic>.value,.inverted.yellow.statistics .statistic>.value,.statistics .inverted.yellow.statistic>.value {
+    color: #ffe21f
+}
+
+.inverted.olive.statistic>.value,.inverted.olive.statistics .statistic>.value,.statistics .inverted.olive.statistic>.value {
+    color: #d9e778
+}
+
+.inverted.green.statistic>.value,.inverted.green.statistics .statistic>.value,.statistics .inverted.green.statistic>.value {
+    color: #2ecc40
+}
+
+.inverted.teal.statistic>.value,.inverted.teal.statistics .statistic>.value,.statistics .inverted.teal.statistic>.value {
+    color: #6dffff
+}
+
+.inverted.blue.statistic>.value,.inverted.blue.statistics .statistic>.value,.statistics .inverted.blue.statistic>.value {
+    color: #54c8ff
+}
+
+.inverted.violet.statistic>.value,.inverted.violet.statistics .statistic>.value,.statistics .inverted.violet.statistic>.value {
+    color: #a291fb
+}
+
+.inverted.purple.statistic>.value,.inverted.purple.statistics .statistic>.value,.statistics .inverted.purple.statistic>.value {
+    color: #dc73ff
+}
+
+.inverted.pink.statistic>.value,.inverted.pink.statistics .statistic>.value,.statistics .inverted.pink.statistic>.value {
+    color: #ff8edf
+}
+
+.inverted.brown.statistic>.value,.inverted.brown.statistics .statistic>.value,.statistics .inverted.brown.statistic>.value {
+    color: #d67c1c
+}
+
+.inverted.grey.statistic>.value,.inverted.grey.statistics .statistic>.value,.statistics .inverted.grey.statistic>.value {
+    color: #dcddde
+}
+
+[class*="left floated"].statistic {
+    float: left;
+    margin: 0 20px 10px 0
+}
+
+[class*="right floated"].statistic {
+    float: right;
+    margin: 0 0 10px 20px
+}
+
+.floated.statistic:last-child {
+    margin-bottom: 0
+}
+
+
