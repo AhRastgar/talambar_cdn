@@ -39174,6 +39174,15 @@ body.ipProtection .g-recaptcha {
 
 
 
+.text-2xs {
+  font-size: .625rem;
+  line-height: 0.75rem;
+}
+
+
+
+
+
 .font-bold {
   font-weight: 700;
 }

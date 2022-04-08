@@ -18,6 +18,9 @@ module.exports = {
       'Lalezar': 'Lalezar',
     },
     extend: {
+      fontSize: {
+        '2xs': ['.625rem', '0.75rem']
+      },
       aspectRatio: {
         '4/3': '4 / 3',
         '16/9': '16 / 9',
